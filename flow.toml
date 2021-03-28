@@ -1,0 +1,182 @@
+
+# {{{
+sessions = [
+    { session_id = 123, session_password = 'geheim0', user_id = 456, user_password = 'qwertz0', seq_nr = 1 },
+    { session_id = 124, session_password = 'geheim1', user_id = 457, user_password = 'qwertz1', seq_nr = 1 },
+    { session_id = 125, session_password = 'geheim2', user_id = 458, user_password = 'qwertz2', seq_nr = 1 },
+    { session_id = 126, session_password = 'geheim3', user_id = 459, user_password = 'qwertz3', seq_nr = 1 },
+    { session_id = 127, session_password = 'geheim4', user_id = 460, user_password = 'qwertz4', seq_nr = 1 },
+    { session_id = 128, session_password = 'geheim5', user_id = 461, user_password = 'qwertz5', seq_nr = 1 },
+    { session_id = 129, session_password = 'geheim6', user_id = 462, user_password = 'qwertz6', seq_nr = 1 },
+    { session_id = 130, session_password = 'geheim7', user_id = 463, user_password = 'qwertz7', seq_nr = 1 },
+    { session_id = 131, session_password = 'geheim8', user_id = 464, user_password = 'qwertz8', seq_nr = 1 },
+    { session_id = 132, session_password = 'geheim9', user_id = 465, user_password = 'qwertz9', seq_nr = 1 },
+    { session_id = 133, session_password = 'geheim10', user_id = 466, user_password = 'qwertz10', seq_nr = 1 },
+    { session_id = 134, session_password = 'geheim11', user_id = 467, user_password = 'qwertz11', seq_nr = 1 },
+    { session_id = 135, session_password = 'geheim12', user_id = 468, user_password = 'qwertz12', seq_nr = 1 },
+    { session_id = 136, session_password = 'geheim13', user_id = 469, user_password = 'qwertz13', seq_nr = 1 },
+    { session_id = 137, session_password = 'geheim14', user_id = 470, user_password = 'qwertz14', seq_nr = 1 },
+    { session_id = 138, session_password = 'geheim15', user_id = 471, user_password = 'qwertz15', seq_nr = 1 },
+    { session_id = 139, session_password = 'geheim16', user_id = 472, user_password = 'qwertz16', seq_nr = 1 },
+    { session_id = 140, session_password = 'geheim17', user_id = 473, user_password = 'qwertz17', seq_nr = 1 },
+    { session_id = 141, session_password = 'geheim18', user_id = 474, user_password = 'qwertz18', seq_nr = 1 },
+    { session_id = 142, session_password = 'geheim19', user_id = 475, user_password = 'qwertz19', seq_nr = 1 },
+    { session_id = 143, session_password = 'geheim20', user_id = 476, user_password = 'qwertz20', seq_nr = 1 },
+    { session_id = 144, session_password = 'geheim21', user_id = 477, user_password = 'qwertz21', seq_nr = 1 },
+    { session_id = 145, session_password = 'geheim22', user_id = 478, user_password = 'qwertz22', seq_nr = 1 },
+    { session_id = 146, session_password = 'geheim23', user_id = 479, user_password = 'qwertz23', seq_nr = 1 },
+    { session_id = 147, session_password = 'geheim24', user_id = 480, user_password = 'qwertz24', seq_nr = 1 },
+    { session_id = 148, session_password = 'geheim25', user_id = 481, user_password = 'qwertz25', seq_nr = 1 },
+    { session_id = 149, session_password = 'geheim26', user_id = 482, user_password = 'qwertz26', seq_nr = 1 },
+    { session_id = 150, session_password = 'geheim27', user_id = 483, user_password = 'qwertz27', seq_nr = 1 },
+    { session_id = 151, session_password = 'geheim28', user_id = 484, user_password = 'qwertz28', seq_nr = 1 },
+    { session_id = 152, session_password = 'geheim29', user_id = 485, user_password = 'qwertz29', seq_nr = 1 },
+    { session_id = 153, session_password = 'geheim30', user_id = 486, user_password = 'qwertz30', seq_nr = 1 },
+    { session_id = 154, session_password = 'geheim31', user_id = 487, user_password = 'qwertz31', seq_nr = 1 },
+    { session_id = 155, session_password = 'geheim32', user_id = 488, user_password = 'qwertz32', seq_nr = 1 },
+    { session_id = 156, session_password = 'geheim33', user_id = 489, user_password = 'qwertz33', seq_nr = 1 },
+    { session_id = 157, session_password = 'geheim34', user_id = 490, user_password = 'qwertz34', seq_nr = 1 },
+    { session_id = 158, session_password = 'geheim35', user_id = 491, user_password = 'qwertz35', seq_nr = 1 },
+    { session_id = 159, session_password = 'geheim36', user_id = 492, user_password = 'qwertz36', seq_nr = 1 },
+    { session_id = 160, session_password = 'geheim37', user_id = 493, user_password = 'qwertz37', seq_nr = 1 },
+    { session_id = 161, session_password = 'geheim38', user_id = 494, user_password = 'qwertz38', seq_nr = 1 },
+    { session_id = 162, session_password = 'geheim39', user_id = 495, user_password = 'qwertz39', seq_nr = 1 },
+    { session_id = 163, session_password = 'geheim40', user_id = 496, user_password = 'qwertz40', seq_nr = 1 },
+    { session_id = 164, session_password = 'geheim41', user_id = 497, user_password = 'qwertz41', seq_nr = 1 },
+    { session_id = 165, session_password = 'geheim42', user_id = 498, user_password = 'qwertz42', seq_nr = 1 },
+    { session_id = 166, session_password = 'geheim43', user_id = 499, user_password = 'qwertz43', seq_nr = 1 },
+    { session_id = 167, session_password = 'geheim44', user_id = 500, user_password = 'qwertz44', seq_nr = 1 },
+    { session_id = 168, session_password = 'geheim45', user_id = 501, user_password = 'qwertz45', seq_nr = 1 },
+    { session_id = 169, session_password = 'geheim46', user_id = 502, user_password = 'qwertz46', seq_nr = 1 },
+    { session_id = 170, session_password = 'geheim47', user_id = 503, user_password = 'qwertz47', seq_nr = 1 },
+    { session_id = 171, session_password = 'geheim48', user_id = 504, user_password = 'qwertz48', seq_nr = 1 },
+    { session_id = 172, session_password = 'geheim49', user_id = 505, user_password = 'qwertz49', seq_nr = 1 },
+    { session_id = 173, session_password = 'geheim50', user_id = 506, user_password = 'qwertz50', seq_nr = 1 },
+    { session_id = 174, session_password = 'geheim51', user_id = 507, user_password = 'qwertz51', seq_nr = 1 },
+    { session_id = 175, session_password = 'geheim52', user_id = 508, user_password = 'qwertz52', seq_nr = 1 },
+    { session_id = 176, session_password = 'geheim53', user_id = 509, user_password = 'qwertz53', seq_nr = 1 },
+    { session_id = 177, session_password = 'geheim54', user_id = 510, user_password = 'qwertz54', seq_nr = 1 },
+    { session_id = 178, session_password = 'geheim55', user_id = 511, user_password = 'qwertz55', seq_nr = 1 },
+    { session_id = 179, session_password = 'geheim56', user_id = 512, user_password = 'qwertz56', seq_nr = 1 },
+    { session_id = 180, session_password = 'geheim57', user_id = 513, user_password = 'qwertz57', seq_nr = 1 },
+    { session_id = 181, session_password = 'geheim58', user_id = 514, user_password = 'qwertz58', seq_nr = 1 },
+    { session_id = 182, session_password = 'geheim59', user_id = 515, user_password = 'qwertz59', seq_nr = 1 },
+    { session_id = 183, session_password = 'geheim60', user_id = 516, user_password = 'qwertz60', seq_nr = 1 },
+    { session_id = 184, session_password = 'geheim61', user_id = 517, user_password = 'qwertz61', seq_nr = 1 },
+    { session_id = 185, session_password = 'geheim62', user_id = 518, user_password = 'qwertz62', seq_nr = 1 },
+    { session_id = 186, session_password = 'geheim63', user_id = 519, user_password = 'qwertz63', seq_nr = 1 },
+    { session_id = 187, session_password = 'geheim64', user_id = 520, user_password = 'qwertz64', seq_nr = 1 },
+    { session_id = 188, session_password = 'geheim65', user_id = 521, user_password = 'qwertz65', seq_nr = 1 },
+    { session_id = 189, session_password = 'geheim66', user_id = 522, user_password = 'qwertz66', seq_nr = 1 },
+    { session_id = 190, session_password = 'geheim67', user_id = 523, user_password = 'qwertz67', seq_nr = 1 },
+    { session_id = 191, session_password = 'geheim68', user_id = 524, user_password = 'qwertz68', seq_nr = 1 },
+    { session_id = 192, session_password = 'geheim69', user_id = 525, user_password = 'qwertz69', seq_nr = 1 },
+    { session_id = 193, session_password = 'geheim70', user_id = 526, user_password = 'qwertz70', seq_nr = 1 },
+    { session_id = 194, session_password = 'geheim71', user_id = 527, user_password = 'qwertz71', seq_nr = 1 },
+    { session_id = 195, session_password = 'geheim72', user_id = 528, user_password = 'qwertz72', seq_nr = 1 },
+    { session_id = 196, session_password = 'geheim73', user_id = 529, user_password = 'qwertz73', seq_nr = 1 },
+    { session_id = 197, session_password = 'geheim74', user_id = 530, user_password = 'qwertz74', seq_nr = 1 },
+    { session_id = 198, session_password = 'geheim75', user_id = 531, user_password = 'qwertz75', seq_nr = 1 },
+    { session_id = 199, session_password = 'geheim76', user_id = 532, user_password = 'qwertz76', seq_nr = 1 },
+    { session_id = 200, session_password = 'geheim77', user_id = 533, user_password = 'qwertz77', seq_nr = 1 },
+    { session_id = 201, session_password = 'geheim78', user_id = 534, user_password = 'qwertz78', seq_nr = 1 },
+    { session_id = 202, session_password = 'geheim79', user_id = 535, user_password = 'qwertz79', seq_nr = 1 },
+    { session_id = 203, session_password = 'geheim80', user_id = 536, user_password = 'qwertz80', seq_nr = 1 },
+    { session_id = 204, session_password = 'geheim81', user_id = 537, user_password = 'qwertz81', seq_nr = 1 },
+    { session_id = 205, session_password = 'geheim82', user_id = 538, user_password = 'qwertz82', seq_nr = 1 },
+    { session_id = 206, session_password = 'geheim83', user_id = 539, user_password = 'qwertz83', seq_nr = 1 },
+    { session_id = 207, session_password = 'geheim84', user_id = 540, user_password = 'qwertz84', seq_nr = 1 },
+    { session_id = 208, session_password = 'geheim85', user_id = 541, user_password = 'qwertz85', seq_nr = 1 },
+    { session_id = 209, session_password = 'geheim86', user_id = 542, user_password = 'qwertz86', seq_nr = 1 },
+    { session_id = 210, session_password = 'geheim87', user_id = 543, user_password = 'qwertz87', seq_nr = 1 },
+    { session_id = 211, session_password = 'geheim88', user_id = 544, user_password = 'qwertz88', seq_nr = 1 },
+    { session_id = 212, session_password = 'geheim89', user_id = 545, user_password = 'qwertz89', seq_nr = 1 },
+    { session_id = 213, session_password = 'geheim90', user_id = 546, user_password = 'qwertz90', seq_nr = 1 },
+    { session_id = 214, session_password = 'geheim91', user_id = 547, user_password = 'qwertz91', seq_nr = 1 },
+    { session_id = 215, session_password = 'geheim92', user_id = 548, user_password = 'qwertz92', seq_nr = 1 },
+    { session_id = 216, session_password = 'geheim93', user_id = 549, user_password = 'qwertz93', seq_nr = 1 },
+    { session_id = 217, session_password = 'geheim94', user_id = 550, user_password = 'qwertz94', seq_nr = 1 },
+    { session_id = 218, session_password = 'geheim95', user_id = 551, user_password = 'qwertz95', seq_nr = 1 },
+    { session_id = 219, session_password = 'geheim96', user_id = 552, user_password = 'qwertz96', seq_nr = 1 },
+    { session_id = 220, session_password = 'geheim97', user_id = 553, user_password = 'qwertz97', seq_nr = 1 },
+    { session_id = 221, session_password = 'geheim98', user_id = 554, user_password = 'qwertz98', seq_nr = 1 },
+    { session_id = 222, session_password = 'geheim99', user_id = 555, user_password = 'qwertz99', seq_nr = 1 },
+]
+# }}}
+
+[variables]
+session_id = { off = 28, size = 4 }
+session_password = { off = 62, size = 32 }
+user_id = { off = 24, size = 4 }
+user_password = { off = 28, size = 32 }
+version = { off = 32, size = 30 }
+seq_nr = { off = 16, size = 4 }
+
+[global]
+version = '9.0'
+
+[sender]
+
+# hint: use uneven intervals for better distribution,
+# such as 99.999999 ms
+
+session.interval_ns      = 100000000
+    # => each session sends a message each 100 ms
+session.start_off_inc_ns = 1000000
+    # => each session starts with a delay of 1ms
+
+session.start_off_ns = 23000
+    # => first session starts 23 µs after the next full minute
+
+
+# use only the first N sessions
+# XXX change for test
+sessions = 100
+#sessions = 2
+    # => with 100 session we have a message rate of 1 kHz
+
+# XXX switch for test
+#cores = [ 9, 10, 11, 12, 13, 14, 15 ]
+cores = [ 1, 2, 3 ]
+    # => with e.g. 10 cores each sender thread has a time budget of 10 ms for each message;
+    #    with e.g.  7 cores the budget shrinks to 7 ms
+priority =  1
+
+
+[[flow.prelude]]
+pkt = '18010000102700000000000000000000ffffffffffffffff80ee36009a020000392e3000000000000000000000000000000000000000000000000000000067656865696d000000000000000000000000000000000000000000000000000041414e000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000747261642d6f2d6d6174696300000000000000000000000000000000000030382e31350000000000000000000000000000000000000000000000000041434d4520476d6248000000000000000000000000000000000000000000000000'
+answer_tag = 10001
+vars = [ 'session_id', 'version', 'session_password', 'seq_nr' ]
+actions = [ { op = 'inc', name= 'seq_nr' }  ]
+
+[[flow.prelude]]
+pkt = '40000000222700000000000000000000ffffffffffffffff39050000626c756d656e746f70666572646500000000000000000000000000000000000000000000'
+answer_tag = 10019
+vars = [ 'user_id', 'user_password', 'seq_nr' ]
+actions = [ { op = 'inc', name= 'seq_nr' }  ]
+
+
+[[flow.main]]
+pkt = '600000008d2700000000000000000000ffffffffffffffffc02a768a0000000050870a00000000000700000000000000ffffffffffffffff1600000000000000390500000000000017000000ffffffff01000100000000000205ffff16000000'
+vars = [ 'seq_nr' ]
+actions = [ { op = 'inc', name = 'seq_nr' } ]
+
+[[flow.main]]
+pkt = '48000000882700000000000000000000ffffffff39050000000000000000008000000000000000801600000000000000ffffffffffffffff17000000ffffffffffffffffffffff16'
+vars = [ 'seq_nr' ]
+actions = [ { op = 'inc', name = 'seq_nr' } ]
+
+
+[receiver]
+# XXX switch for test
+#core = 8
+core = 0
+len.off = 0
+len.size = 4
+tag.off = 4
+tag.size = 2
+error_tag = 10010
+error_msg_len.off = 60
+error_msg_len.size = 2
+error_msg_off = 64
+
