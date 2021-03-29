@@ -28,9 +28,9 @@ target_link_libraries(tcploadgen
     Threads::Threads
     )
 
-add_executable(test_toml
-    test_toml.cc
-    )
-set_property(TARGET test_toml PROPERTY INCLUDE_DIRECTORIES
-    ${CMAKE_SOURCE_DIR}/tomlplusplus/include
-    )
+# add_executable(test_toml
+#     test_toml.cc
+#     )
+# set_property(TARGET test_toml PROPERTY INCLUDE_DIRECTORIES
+#     ${CMAKE_SOURCE_DIR}/tomlplusplus/include
+#     )
