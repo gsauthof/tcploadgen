@@ -4,3 +4,6 @@
 [submodule "libixxxutil"]
 	path = libixxxutil
 	url = https://github.com/gsauthof/libixxxutil.git
+[submodule "tomlplusplus"]
+	path = tomlplusplus
+	url = https://github.com/marzer/tomlplusplus.git
