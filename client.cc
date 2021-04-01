@@ -147,6 +147,17 @@ static void login(int fd, std::vector<Packet> &flow, const Var_Decls &var_decls,
     }
 }
 
+static void set_timespec_ns(struct timespec &ts, uint64_t ns)
+{
+    uint64_t s = ns / 1000000000ul;
+
+    ts.tv_sec = s;
+
+    ns -= s * 1000000000ul;
+
+    ts.tv_nsec = ns;
+}
+
 
 void *Sender::main()
 {
@@ -173,13 +184,10 @@ void *Sender::main()
         session.tfd = ixxx::linux::timerfd_create(CLOCK_REALTIME, 0);
         tfds.emplace_back(session.tfd);
 
-        struct itimerspec spec = {
-            .it_interval = { .tv_nsec = long(session.interval_ns) },
-            .it_value = {
-                .tv_sec     = next_minute_epoche(),
-                .tv_nsec    = long(session.start_off_ns)
-            }
-        };
+        struct itimerspec spec = { 0 };
+        set_timespec_ns(spec.it_interval, session.interval_ns);
+        set_timespec_ns(spec.it_value, session.start_off_ns);
+        spec.it_value.tv_sec += next_minute_epoche();
         ixxx::linux::timerfd_settime(session.tfd, TFD_TIMER_ABSTIME, &spec,  0);
 
         struct epoll_event ev = { .events = EPOLLIN,
