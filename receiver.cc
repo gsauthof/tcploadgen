@@ -68,7 +68,7 @@ unsigned Receiver_Config::receive_next(int fd, unsigned char *buf, size_t buf_si
 {
     ssize_t n = ixxx::util::read_all(fd, buf, len.off + len.size);
     if (!n) {
-        throw std::runtime_error("early EOF on one conections");
+        throw std::underflow_error("early EOF on one conections");
     }
     if (n != len.off + len.size) {
         throw std::runtime_error("short read on one conections");
@@ -141,8 +141,16 @@ void *Receiver::main()
                     if (conn_fds.empty())
                         return nullptr;
                 } else {
-                    cfg.receive_next(fd, buf, sizeof buf);
-                    ++receive_count;
+                    try {
+                        cfg.receive_next(fd, buf, sizeof buf);
+                        ++receive_count;
+                    } catch (const std::underflow_error &e) {
+                        conn_fds.erase(fd);
+                        std::cout << "Closing after EOF, conn_fd: " << fd <<  "\n";
+                        ixxx::posix::close(fd);
+                        if (conn_fds.empty())
+                            return nullptr;
+                    }
                 }
             }
         }
