@@ -62,8 +62,35 @@ Example:
 ## Dependencies
 
 - C++17
+- cmake
+- [libixxx](https://github.com/gsauthof/libixxx)
+- [libixxxutil](https://github.com/gsauthof/libixxxutil)
 - [tomlplusplus](https://github.com/marzer/tomlplusplus)
 
+Where these libraries are referenced via git submodules.
+
+## Build Instructions
+
+You basically just have to make sure that the submodules are
+checked out. Otherwise it's just the usual cmake dance. For
+example:
+
+```
+git clone https://github.com/gsauthof/tcploadgen.git
+git submodule update --init
+mkdir build
+cd build
+CXXFLAGS='-O3 -g -Wall' cmake ..
+make
+```
+
+Or if Ninja is available you can replace the last commands with something
+like:
+
+```
+CXXFLAGS='-O3 -g -Wall' cmake -G Ninja ..
+ninja
+```
 
 [toml]: https://toml.io/en/v1.0.0#spec
 
