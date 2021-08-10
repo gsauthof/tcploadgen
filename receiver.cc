@@ -135,9 +135,12 @@ void *Receiver::main()
             } else {
                 if (evs[i].events & (EPOLLHUP | EPOLLRDHUP)) {
                     // i.e. sender-thread shut its connection down, or server shut it down
-                    conn_fds.erase(fd);
                     std::cout << "Closing conn_fd: " << fd <<  "\n";
-                    ixxx::posix::close(fd);
+                    auto r = conn_fds.erase(fd);
+                    if (r)
+                        ixxx::posix::close(fd);
+                    else
+                        std::cout << "WARNING: conn_fd " << fd << " alread closed!\n";
                     if (conn_fds.empty())
                         return nullptr;
                 } else {
@@ -145,9 +148,12 @@ void *Receiver::main()
                         cfg.receive_next(fd, buf, sizeof buf);
                         ++receive_count;
                     } catch (const std::underflow_error &e) {
-                        conn_fds.erase(fd);
                         std::cout << "Closing after EOF, conn_fd: " << fd <<  "\n";
-                        ixxx::posix::close(fd);
+                        auto r = conn_fds.erase(fd);
+                        if (r)
+                            ixxx::posix::close(fd);
+                        else
+                            std::cout << "WARNING: EOF conn_fd fd " << fd << " already closed!\n";
                         if (conn_fds.empty())
                             return nullptr;
                     }
